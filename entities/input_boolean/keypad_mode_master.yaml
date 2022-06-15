@@ -1,0 +1,8 @@
+# Input boolean: Master Keypads Mode
+#
+# This mode is to set the keypads into night mode. Master is handled separately
+# and this will be enabled if someone is sleeping
+name: "Master Keypad Mode"
+#icon: >
+#  if (state === 'on') return 'mdi:weather-night';
+#  return 'mdi:weather-sunny'

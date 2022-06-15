@@ -1,0 +1,17 @@
+---
+- name: Master CO2
+  state_address: 0/4/14
+  type: ppm
+  sync_state: every 10
+- name: Master Humidity
+  state_address: 0/4/34
+  type: humidity
+  sync_state: every 10
+- name: Master Temperature
+  state_address: 0/4/35
+  type: temperature
+  sync_state: every 10
+- name: Master Enthalpy
+  state_address: 0/4/38
+  type: enthalpy
+  sync_state: every 10

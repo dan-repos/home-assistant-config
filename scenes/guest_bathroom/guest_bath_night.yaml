@@ -1,0 +1,8 @@
+---
+id: "c447c2c4-fed3-4545-8402-0f27251fa81a"
+name: "Guest Bathroom: Night"
+icon: mdi:weather-night
+entities:
+  light.guest_bath_downlights:
+    brightness: 150
+    state: "on"

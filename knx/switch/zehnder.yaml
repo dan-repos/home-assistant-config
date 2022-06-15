@@ -1,0 +1,25 @@
+---
+- name: Zehnder Ventilation Preset Away
+  state_address: 1/1/2
+  address: 1/1/3
+- name: Zehnder Ventilation Preset 1
+  state_address: 1/1/4
+  address: 1/1/5
+- name: Zehnder Ventilation Preset 2
+  state_address: 1/1/6
+  address: 1/1/7
+- name: Zehnder Ventilation Preset 3
+  state_address: 1/1/8
+  address: 1/1/9
+- name: Zehnder Auto mode
+  state_address: 1/1/10
+  address: 1/1/11
+- name: Zehnder Boost
+  state_address: 1/1/18
+  address: 1/1/19
+- name: Zehnder Away function
+  state_address: 1/1/22
+  address: 1/1/23
+- name: Zehnder ComfoCool
+  state_address: 1/1/24
+  address: 1/1/25

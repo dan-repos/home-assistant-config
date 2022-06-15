@@ -1,0 +1,13 @@
+---
+- name: Main Bathroom Brightness
+  state_address: 0/7/8
+  type: illuminance
+  sync_state: every 30
+- name: Main Bathroom Humidity
+  state_address: 0/4/9
+  type: humidity
+  sync_state: every 10
+- name: Main Bathroom Temperature
+  state_address: 0/4/33
+  type: temperature
+  sync_state: every 10

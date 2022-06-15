@@ -1,0 +1,38 @@
+# Downstairs
+- name: Guest bed Ceiling Light
+  address: 0/1/6
+  state_address: 0/1/7
+  brightness_address: 0/1/9
+  brightness_state_address: 0/1/10
+
+  # Upstairs
+- name: Study Ceiling Light
+  address: 0/2/46
+  state_address: 0/2/47
+  brightness_address: 0/2/49
+  brightness_state_address: 0/2/50
+- name: Master Pendant
+  address: 0/2/56
+  state_address: 0/2/57
+  brightness_address: 0/2/59
+  brightness_state_address: 0/2/60
+- name: Kitchen Pendant
+  address: 0/2/91
+  state_address: 0/2/92
+  brightness_address: 0/2/94
+  brightness_state_address: 0/2/95
+- name: Dining Pendant
+  address: 0/2/101
+  state_address: 0/2/102
+  brightness_address: 0/2/104
+  brightness_state_address: 0/2/105
+- name: Living Pendant
+  address: 0/2/106
+  state_address: 0/2/107
+  brightness_address: 0/2/109
+  brightness_state_address: 0/2/110
+- name: WC Pendant
+  address: 0/2/131
+  state_address: 0/2/132
+  brightness_address: 0/2/134
+  brightness_state_address: 0/2/135

@@ -1,0 +1,28 @@
+---
+id: "60363e83-a615-4c00-83fb-41d8a7ec6fd6"
+alias: KNX update exposed values
+description: >-
+  Send read request values to home-assistant exposed addresses to update
+  their value on KNX entities.
+  - Input on KNX entity needs to have the update flag set
+trigger:
+  - platform: time_pattern
+    minutes: "/5"
+condition: []
+action:
+  - service: knx.read
+    data:
+      address: 2/1/3
+  - service: knx.read
+    data:
+      address: 2/1/4
+  - service: knx.read
+    data:
+      address: 2/1/5
+  - service: knx.read
+    data:
+      address: 2/1/6
+  - service: knx.read
+    data:
+      address: 2/1/7
+mode: single

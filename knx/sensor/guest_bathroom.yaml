@@ -1,0 +1,13 @@
+---
+- name: Guest Bathroom Brightness
+  state_address: 0/7/6
+  type: illuminance
+  sync_state: every 30
+- name: Guest Bathroom Humidity
+  state_address: 0/4/6
+  type: humidity
+  sync_state: every 10
+- name: Guest Bathroom Temperature
+  state_address: 0/4/15
+  type: temperature
+  sync_state: every 10

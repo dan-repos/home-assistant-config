@@ -1,0 +1,8 @@
+---
+id: "10c6d1aa-e2cf-4472-aea4-15df2b8d06af"
+name: "Staircase: Sunrise"
+icon: mdi:weather-sunset-up
+entities:
+  light.stairs_handrail:
+    brightness: 150
+    state: "on"

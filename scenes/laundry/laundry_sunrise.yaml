@@ -1,0 +1,8 @@
+---
+id: "69552009-5ca1-41b7-bdbe-0bfe9f355865"
+name: "Laundry: Sunrise"
+icon: mdi:weather-sunset-up
+entities:
+  light.laundry_downlights:
+    brightness: 200
+    state: "on"

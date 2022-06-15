@@ -1,0 +1,13 @@
+---
+- name: Entry Brightness
+  state_address: 0/7/4
+  type: illuminance
+  sync_state: every 30
+- name: Entry Humidity
+  state_address: 0/4/1
+  type: humidity
+  sync_state: every 10
+- name: Entry Temperature
+  state_address: 0/4/22
+  type: temperature
+  sync_state: every 10

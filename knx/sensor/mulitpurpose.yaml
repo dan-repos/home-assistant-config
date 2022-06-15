@@ -1,0 +1,5 @@
+---
+- name: "MPR Temperature"
+  state_address: 0/4/19
+  type: temperature
+  sync_state: expire 10

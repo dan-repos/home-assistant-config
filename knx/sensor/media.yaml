@@ -1,0 +1,5 @@
+---
+- name: "Media Temperature"
+  state_address: 0/4/18
+  type: temperature
+  sync_state: expire 10

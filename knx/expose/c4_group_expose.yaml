@@ -1,0 +1,13 @@
+---
+- type: time
+  address: 0/6/29
+- type: date
+  address: 0/6/32
+- type: datetime
+  address: 0/6/28
+- type: binary
+  entity_id: binary_sensor.bedtime
+  address: 0/6/30
+- type: binary
+  entity_id: binary_sensor.late_night
+  address: 0/6/31

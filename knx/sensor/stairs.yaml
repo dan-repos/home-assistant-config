@@ -1,0 +1,9 @@
+---
+- name: Stairs Brightness
+  state_address: 0/7/5
+  type: illuminance
+  sync_state: every 30
+- name: Stairs Temperature
+  state_address: 0/4/32
+  type: temperature
+  sync_state: every 10

@@ -1,0 +1,43 @@
+---
+- name: Garage motion
+  state_address: 2/0/0
+  device_class: motion
+- name: Entry motion
+  state_address: 2/0/1
+  device_class: motion
+- name: Entry Hallway motion
+  state_address: 2/0/2
+  device_class: motion
+- name: Guest Bathroom motion
+  state_address: 2/0/3
+  device_class: motion
+- name: Laundry motion
+  state_address: 2/0/4
+  device_class: motion
+- name: Utility motion
+  state_address: 2/0/5
+  device_class: motion
+- name: Storage motion
+  state_address: 2/0/6
+  device_class: motion
+- name: Stairs motion
+  state_address: 2/0/7
+  device_class: motion
+- name: Pantry motion
+  state_address: 2/0/8
+  device_class: motion
+- name: Upstairs Hallway motion
+  state_address: 2/0/9
+  device_class: motion
+- name: Main Bathroom motion
+  state_address: 2/0/10
+  device_class: motion
+- name: WC motion
+  state_address: 2/0/11
+  device_class: motion
+- name: Wardrobe motion
+  state_address: 2/0/12
+  device_class: motion
+- name: Attic motion
+  state_address: 2/0/13
+  device_class: motion

@@ -1,0 +1,10 @@
+---
+- platform: template
+  sensors:
+    lights_on_count:
+      friendly_name: "Lights on count"
+      value_template: >
+        {{ states.light 
+        | rejectattr('attributes.entity_id', 'defined') 
+        | selectattr('state', 'eq', 'on')
+        | list | count }}

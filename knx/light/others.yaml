@@ -1,0 +1,69 @@
+---
+# Downstairs
+- name: Stairs Handrail
+  address: 0/1/16
+  state_address: 0/1/17
+  brightness_address: 0/1/19
+  brightness_state_address: 0/1/20
+- name: Media Wallligts
+  address: 0/1/21
+  state_address: 0/1/22
+  brightness_address: 0/1/24
+  brightness_state_address: 0/1/25
+- name: Garage Battons
+  address: 0/1/81
+  state_address: 0/1/82
+  brightness_address: 0/1/84
+  brightness_state_address: 0/1/85
+- name: Entry Outdoor
+  address: 0/1/86
+  state_address: 0/1/87
+  brightness_address: 0/1/89
+  brightness_state_address: 0/1/90
+- name: Garage Workbench
+  address: 0/1/101
+  state_address: 0/1/102
+  brightness_address: 0/1/104
+  brightness_state_address: 0/1/105
+- name: Laundry Bench
+  address: 0/2/6
+  state_address: 0/2/7
+  brightness_address: 0/2/9
+  brightness_state_address: 0/2/10
+- name: Steam Wall
+  address: 0/2/21
+  state_address: 0/2/22
+  brightness_address: 0/2/24
+  brightness_state_address: 0/2/25
+
+  # Upstairs
+- name: Deck West
+  address: 0/1/91
+  state_address: 0/1/92
+  brightness_address: 0/1/94
+  brightness_state_address: 0/1/95
+- name: Deck North
+  address: 0/1/96
+  state_address: 0/1/97
+  brightness_address: 0/1/99
+  brightness_state_address: 0/1/100
+- name: Kitchen HOB
+  address: 0/2/86
+  state_address: 0/2/87
+  brightness_address: 0/2/89
+  brightness_state_address: 0/2/90
+- name: Main Bath Vanity
+  address: 0/2/121
+  state_address: 0/2/122
+  brightness_address: 0/2/124
+  brightness_state_address: 0/2/125
+- name: Main Bath Cabinet
+  address: 0/2/126
+  state_address: 0/2/127
+#  brightness_address: 0/2/124
+#  brightness_state_address: 0/2/125
+- name: Attic Battons
+  address: 0/2/146
+  state_address: 0/2/147
+  brightness_address: 0/2/149
+  brightness_state_address: 0/2/150

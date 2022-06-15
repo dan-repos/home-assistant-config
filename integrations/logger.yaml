@@ -1,0 +1,13 @@
+---
+#
+# https://www.home-assistant.io/integrations/logger/
+#
+logger:
+  default: warning
+  logs:
+    # AAP Alarm Module
+    custom_components.crowipmodule: info
+
+    # iTouch2 Spa integration
+    custom_components.gecko: debug
+    geckolib: debug

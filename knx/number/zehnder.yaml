@@ -1,0 +1,27 @@
+---
+- name: Zehnder Ventilation Preset
+  state_address: 1/1/0
+  address: 1/1/1
+  type: pulse
+  min: 0
+  max: 3
+- name: Zehnder Temperature profile mode
+  state_address: 1/1/12
+  address: 1/1/13
+  type: pulse
+  min: 0
+  max: 2
+- name: Zehnder Temperature profile
+  state_address: 1/1/14
+  address: 1/1/15
+  type: pulse
+  min: 0
+  max: 2
+- name: Zehnder External setpoint
+  state_address: 1/1/16
+  address: 1/1/17
+  type: temperature
+- name: Zehnder Boost time
+  state_address: 1/1/20
+  address: 1/1/21
+  type: time_period_sec

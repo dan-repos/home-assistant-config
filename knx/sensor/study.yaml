@@ -1,0 +1,5 @@
+---
+- name: "Study Temperature"
+  state_address: 0/4/20
+  type: temperature
+  sync_state: expire 10

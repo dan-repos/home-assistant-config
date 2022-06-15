@@ -1,0 +1,8 @@
+---
+id: "a5106fc2-62ae-46ed-bd55-b5c0c81f0cea"
+name: "Entry Back: Sunrise"
+icon: mdi:weather-sunset-up
+entities:
+  light.entry_back_downlight:
+    brightness: 200
+    state: "on"

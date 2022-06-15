@@ -1,0 +1,13 @@
+---
+- name: Laundry Brightness
+  state_address: 0/7/2
+  type: illuminance
+  sync_state: every 30
+- name: Laundry Humidity
+  state_address: 0/4/4
+  type: humidity
+  sync_state: every 10
+- name: Laundry Temperature
+  state_address: 0/4/31
+  type: temperature
+  sync_state: every 10

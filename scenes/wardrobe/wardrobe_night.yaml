@@ -1,0 +1,8 @@
+---
+id: "fae2b964-9af0-4848-9ae2-43bcd25be2ff"
+name: "Wardrobe: Night"
+icon: mdi:weather-night
+entities:
+  light.wardrobe_downlights:
+    brightness: 100
+    state: "on"

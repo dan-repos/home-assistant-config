@@ -1,0 +1,13 @@
+---
+- name: Main Bathroom HTR
+  address: 2/2/1
+  state_address: 2/2/2
+- name: Guest Bathroom HTR
+  address: 2/2/3
+  state_address: 2/2/4
+- name: Garage Ventilation
+  address: 2/2/5
+  state_address: 2/2/6
+- name: LED Strip Power Supply
+  address: 2/2/7
+  state_address: 2/2/8

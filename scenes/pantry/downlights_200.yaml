@@ -1,0 +1,8 @@
+---
+id: "684c30eb-c38c-42af-965d-3a0afa8fc4d6"
+name: "Pantry: 78%"
+icon: mdi:weather-night
+entities:
+  light.pantry_downlights:
+    brightness: 200
+    state: "on"

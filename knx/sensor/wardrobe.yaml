@@ -1,0 +1,13 @@
+---
+- name: Wardrobe Brightness
+  state_address: 0/7/10
+  type: illuminance
+  sync_state: every 30
+- name: Wardrobe Humidity
+  state_address: 0/4/12
+  type: humidity
+  sync_state: every 10
+- name: Wardrobe Temperature
+  state_address: 0/4/28
+  type: temperature
+  sync_state: every 10

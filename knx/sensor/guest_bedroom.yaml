@@ -1,0 +1,5 @@
+---
+- name: "Guest Bedroom Temperature"
+  state_address: 0/4/17
+  type: temperature
+  sync_state: expire 10

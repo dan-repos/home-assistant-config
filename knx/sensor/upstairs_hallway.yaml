@@ -1,0 +1,13 @@
+---
+- name: Upstairs Hallway Brightness
+  state_address: 0/7/7
+  type: illuminance
+  sync_state: every 30
+- name: Upstairs Hallway Humidity
+  state_address: 0/4/11
+  type: humidity
+  sync_state: every 10
+- name: Upstairs Hallway Temperature
+  state_address: 0/4/26
+  type: temperature
+  sync_state: every 10

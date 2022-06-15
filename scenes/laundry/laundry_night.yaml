@@ -1,0 +1,8 @@
+---
+id: "08369b36-492c-4359-ad79-919f16e6726e"
+name: "Laundry: Night"
+icon: mdi:weather-night
+entities:
+  light.laundry_downlights:
+    brightness: 150
+    state: "on"

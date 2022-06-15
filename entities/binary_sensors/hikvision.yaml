@@ -1,0 +1,12 @@
+---
+- platform: hikvision
+  name: NVR
+  host: 192.168.17.205
+  username: !secret hikvision_username
+  password: !secret hikvision_password
+  customize:
+    motion:
+      delay: 10
+#    line_crossing:
+#      ignored: false
+

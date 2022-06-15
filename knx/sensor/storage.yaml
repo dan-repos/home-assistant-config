@@ -1,0 +1,13 @@
+---
+- name: Storage Brightness
+  state_address: 0/7/0
+  type: illuminance
+  sync_state: every 30
+- name: Storage Humidity
+  state_address: 0/4/3
+  type: humidity
+  sync_state: every 10
+- name: Storage Temperature
+  state_address: 0/4/24
+  type: temperature
+  sync_state: every 10

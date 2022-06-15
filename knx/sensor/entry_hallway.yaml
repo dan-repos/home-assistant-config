@@ -1,0 +1,13 @@
+---
+- name: Entry Hallway Brightness
+  state_address: 0/7/1
+  type: illuminance
+  sync_state: every 30
+- name: Entry Hallway Humidity
+  state_address: 0/4/2
+  type: humidity
+  sync_state: every 10
+- name: Entry Hallway Temperature
+  state_address: 0/4/30
+  type: temperature
+  sync_state: every 10

@@ -1,0 +1,9 @@
+---
+- name: Zehnder Standby
+  state_address: 1/1/26
+- name: Zehnder ComfoHood
+  state_address: 1/1/27
+- name: Zehnder Error
+  state_address: 1/1/28
+- name: Zehnder Filter dirty
+  state_address: 1/1/30

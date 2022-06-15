@@ -1,0 +1,13 @@
+---
+- name: WC Brightness
+  state_address: 0/7/9
+  type: illuminance
+  sync_state: every 30
+- name: WC  Humidity
+  state_address: 0/4/10
+  type: humidity
+  sync_state: every 10
+- name: WC  Temperature
+  state_address: 0/4/27
+  type: temperature
+  sync_state: every 10

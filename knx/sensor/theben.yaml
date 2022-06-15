@@ -1,0 +1,25 @@
+---
+- name: Theben brigthness west
+  state_address: 1/0/0
+  type: illuminance
+  sync_state: expire 30
+- name: Theben brigthness north
+  state_address: 1/0/1
+  type: illuminance
+  sync_state: expire 30
+- name: Theben brigthness south
+  state_address: 1/0/2
+  type: illuminance
+  sync_state: expire 30
+- name: Theben brigthness max
+  state_address: 1/0/3
+  type: illuminance
+  sync_state: expire 30
+- name: Theben temperature
+  state_address: 1/0/4
+  type: temperature
+  sync_state: expire 10
+- name: Theben wind
+  state_address: 1/0/5
+  type: wind_speed_ms
+  sync_state: expire 10

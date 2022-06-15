@@ -1,0 +1,55 @@
+---
+- name: Zehnder Filter replace
+  state_address: 1/1/29
+  type: time_period_hrs
+  sync_state: expire 10
+- name: Zehnder Airflow
+  state_address: 1/1/31
+  type: volume_flow
+  sync_state: expire 10
+# Zehnder Room temerature only available if sensor connected
+- name: Zehnder Room temperature
+  state_address: 1/1/32
+  type: temperature
+  sync_state: expire 10
+- name: Zehnder Extract temperature
+  state_address: 1/1/33
+  type: temperature
+  sync_state: expire 10
+- name: Zehnder Exhaust temperature
+  state_address: 1/1/34
+  type: temperature
+  sync_state: expire 10
+- name: Zehnder Outdoor temperature
+  state_address: 1/1/35
+  type: temperature
+  sync_state: expire 10
+- name: Zehnder Supply temperature
+  state_address: 1/1/36
+  type: temperature
+  sync_state: expire 10
+# Zehnder Room humidity only if sensor connected
+- name: Zehnder Room humidity
+  state_address: 1/1/37
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Extract humidity
+  state_address: 1/1/38
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Exhaust humidity
+  state_address: 1/1/39
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Outdoor humidity
+  state_address: 1/1/40
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Supply humidity
+  state_address: 1/1/41
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder State/Error
+  state_address: 1/1/42
+  type: percent
+  sync_state: expire 10

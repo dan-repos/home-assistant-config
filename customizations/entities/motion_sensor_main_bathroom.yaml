@@ -1,0 +1,6 @@
+---
+input_boolean.motion_sensor_main_bathroom:
+  templates:
+    icon: >
+      if (state === 'on') return 'mdi:motion-sensor';
+      return 'mdi:motion-sensor-off';

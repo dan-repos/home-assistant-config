@@ -1,0 +1,8 @@
+---
+# Input boolean: House Keypads Mode
+#
+# This mode is to set the keypads into night mode.
+name: "House Keypad Mode"
+#icon: >
+#  if (state === 'on') return 'mdi:weather-night';
+#  return 'mdi:weather-sunny'

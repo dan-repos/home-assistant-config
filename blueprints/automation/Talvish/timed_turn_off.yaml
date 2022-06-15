@@ -1,0 +1,31 @@
+blueprint:
+  name: Automatic Timed Turn Off
+  description: This simple blueprint is used to create an automation that will automatically
+    turn off the specified switch after a given time period whenever the specified
+    switch is turned on.
+  domain: automation
+  input:
+    target_switch:
+      name: Switch
+      description: The switch that when turned on, will turn off after the specified
+        time period.
+      selector:
+        entity:
+          domain: switch
+          multiple: false
+    time_period:
+      name: Time Period
+      description: The time period that the specified switch will be on before being
+        turned off.
+      selector:
+        duration: {}
+  source_url: https://github.com/Talvish/home-assistant-blueprints/blob/main/automation/timed_turn_off.yaml
+trigger:
+- platform: state
+  entity_id: !input 'target_switch'
+  to: 'on'
+  for: !input 'time_period'
+action:
+- service: switch.turn_off
+  entity_id: !input 'target_switch'
+mode: restart

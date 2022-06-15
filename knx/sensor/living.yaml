@@ -1,0 +1,17 @@
+---
+- name: Living CO2
+  state_address: 0/4/7
+  type: ppm
+  sync_state: every 10
+- name: Living Humidity
+  state_address: 0/4/36
+  type: humidity
+  sync_state: every 10
+- name: Living Temperature
+  state_address: 0/4/37
+  type: temperature
+  sync_state: every 10
+- name: Living Enthalpy
+  state_address: 0/4/39
+  type: enthalpy
+  sync_state: every 10

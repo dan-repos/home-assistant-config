@@ -1,0 +1,9 @@
+---
+- name: Bedroom Exterior
+  move_long_address: 0/3/17
+  stop_address: 0/3/18
+  position_address: 0/3/19
+  position_state_address: 0/3/20
+  travelling_time_down: 15
+  travelling_time_up: 15
+  invert_updown: true

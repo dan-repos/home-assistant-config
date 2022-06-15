@@ -1,0 +1,8 @@
+---
+id: "de7e27ab-d826-4403-97e6-bb85d3e547f6"
+name: "Wardrobe: Sunrise"
+icon: mdi:weather-sunset-up
+entities:
+  light.wardrobe_downlights:
+    brightness: 200
+    state: "on"

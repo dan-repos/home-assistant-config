@@ -1,0 +1,23 @@
+---
+- platform: tod
+  name: Night
+  after: sunset
+  #  after_offset: 04:00
+  before: sunrise
+- platform: tod
+  name: Day
+  after: sunrise
+  before: sunset
+#  before_offset: 04:00
+- platform: tod
+  name: Bedtime
+  after: "22:00"
+  before: "07:00"
+- platform: tod
+  name: Late Night
+  after: "00:00"
+  before: "06:00"
+- platform: tod
+  name: Main Bath Sensor Blocked
+  after: "06:00"
+  before: "23:00"

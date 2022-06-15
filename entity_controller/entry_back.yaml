@@ -1,0 +1,13 @@
+---
+motion_light:
+  sensor: binary_sensor.entry_hallway_motion
+  entity: light.entry_back_downlights
+  delay: 300
+  service_data:
+    brightness: 80
+  night_mode:
+    delay: 60
+    service_data:
+      brightness: 20
+    start_time: "22:00:00" # required
+    end_time: "07:00:00" # required
