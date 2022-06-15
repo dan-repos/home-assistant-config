@@ -1,0 +1,4 @@
+home-assistant.log*
+home-assistant_v2*
+integrations_disabled
+secrets.yaml
