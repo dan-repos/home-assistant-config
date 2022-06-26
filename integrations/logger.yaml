@@ -11,3 +11,6 @@ logger:
     # iTouch2 Spa integration
     custom_components.gecko: debug
     geckolib: debug
+
+    # entity controller
+    custom_components.entity_controller: info

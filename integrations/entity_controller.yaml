@@ -1,0 +1,5 @@
+---
+#
+# https://danobot.github.io/ec-docs/
+#
+entity_controller: !include_dir_merge_named ../entity_controller

@@ -13,4 +13,34 @@ Both configuration repos where used as reference during the setup of my own conf
 
 ## Additional Integrations used
 
-TODO:
+### Add-ons:
+- Grafana
+- InfluxDB
+- Network UPS Tools
+- SSH & Web Terminal
+- Studio Code Server
+
+### Custom Components:
+
+- HACS
+- Entity Controller
+- Gecko
+- adaptive_lighting
+- Crow/AAP Alarm IP Module
+- Alpha ESS
+
+### Lovelance Cards
+
+- Stack In Card
+- surveilance card
+- Shutter Card
+- Light Entity Card
+- card-mod
+- fold-entity-row
+- Mushroom
+- Kiosk Mode
+- Lovelance Swipe Navigation
+
+### Lovelance Themes
+- Mushroom Themes
+
