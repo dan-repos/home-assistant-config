@@ -1,0 +1,9 @@
+---
+attic_motion:
+  sensor: binary_sensor.attic_motion
+  entity: light.attic_battons
+  delay: 120
+  overrides:
+    - input_boolean.attic_motion_disabled
+  service_data:
+    brightness: 254

@@ -1,0 +1,8 @@
+---
+# Input boolean: Attic motion disabled
+#
+# This input boolean will disable the motion automation when it
+# is configured as override in the entity controller configuration
+#
+name: "EC: Attic motion disabled"
+

@@ -1,10 +1,10 @@
 ---
-entry_back_motion:
-  sensor: binary_sensor.entry_hallway_motion
-  entity: light.entry_back_downlight
+entry_motion:
+  sensor: binary_sensor.entry_motion
+  entity: light.entry_downlight
   delay: 30
   overrides:
-    - input_boolean.entry_back_motion_disabled
+    - input_boolean.entry_motion_disabled
     - input_boolean.outdoor_brigthness_gt_300
   service_data:
     brightness: 200

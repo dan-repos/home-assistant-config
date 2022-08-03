@@ -1,4 +1,4 @@
 # Input boolean: Main Bathroom Sensor blocked
 #
-# This mode is to block the motion sensor in the main bathroom.
-name: "Motion Sensor"
+# This mode is to enable the motion sensor in the main bathroom.
+name: "Main Bathroom Motion Sensor"
