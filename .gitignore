@@ -5,3 +5,4 @@ secrets.yaml
 custom_components
 .storage
 www/community
+themes/

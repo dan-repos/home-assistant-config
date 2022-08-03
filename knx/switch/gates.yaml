@@ -1,0 +1,7 @@
+---
+- name: Garage Door
+  address: 2/2/9
+  state_address: 2/2/10
+- name: Sliding Gate
+  address: 2/2/11
+  state_address: 2/2/12
