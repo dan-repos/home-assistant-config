@@ -7,6 +7,9 @@ crowipmodule:
     1:
       name: "Home"
       code: !secret crowip_code_home
+    2:
+      name: "Away"
+      code: !secret crowip_code_home
   outputs:
     3:
       name: "Gate"

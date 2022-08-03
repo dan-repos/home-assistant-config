@@ -6,4 +6,4 @@
   position_state_address: 0/3/24
   travelling_time_down: 15
   travelling_time_up: 15
-  invert_updown: true
+  device_class: shade

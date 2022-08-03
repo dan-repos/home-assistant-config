@@ -200,8 +200,8 @@
     input:
       target_switch: switch.guest_bathroom_htr
       time_period:
-        hours: 0
-        minutes: 30
+        hours: 1
+        minutes: 0
         seconds: 0
 - id: '1653559873676'
   alias: Turn off Main Bathroom HTR
@@ -211,8 +211,8 @@
     input:
       target_switch: switch.main_bathroom_htr
       time_period:
-        hours: 0
-        minutes: 30
+        hours: 1
+        minutes: 0
         seconds: 0
 - id: '1654684563814'
   alias: Sleep Mode activated
@@ -235,6 +235,10 @@
         - input_boolean.keypad_mode_house
         - input_boolean.keypad_mode_master
         - input_boolean.motion_sensor_main_bathroom
+    - service: input_boolean.turn_off
+      data: {}
+      target:
+        entity_id: input_boolean.motion_sensor_main_bathroom_disabled
     - service: light.turn_off
       data: {}
       target:
@@ -247,6 +251,10 @@
         - input_boolean.keypad_mode_house
         - input_boolean.keypad_mode_master
         - input_boolean.motion_sensor_main_bathroom
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id: input_boolean.motion_sensor_main_bathroom_disabled
   mode: single
 - id: '1654765793972'
   alias: Turn on House Keypads
@@ -262,4 +270,32 @@
       entity_id:
       - input_boolean.keypad_mode_house
       - input_boolean.motion_sensor_main_bathroom
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.motion_sensor_main_bathroom_disabled
+  mode: single
+- id: '1657440634725'
+  alias: Turn off Garage Fan
+  description: ''
+  use_blueprint:
+    path: Talvish/timed_turn_off.yaml
+    input:
+      target_switch: switch.garage_ventilation
+      time_period:
+        hours: 1
+        minutes: 0
+        seconds: 0
+- id: '1659243009780'
+  alias: Shut Everything Down when arm away
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{is_state_attr(''alarm_control_panel_away'',''disarmed'', False)}}'
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.grp_house
   mode: single

@@ -6,7 +6,7 @@
   position_state_address: 0/3/4
   travelling_time_down: 15
   travelling_time_up: 15
-  invert_updown: true
+  device_class: shade
 - name: South West
   move_long_address: 0/3/5
   stop_address: 0/3/6
@@ -14,7 +14,7 @@
   position_state_address: 0/3/8
   travelling_time_down: 15
   travelling_time_up: 15
-  invert_updown: true
+  device_class: shade
 - name: North West
   move_long_address: 0/3/9
   stop_address: 0/3/10
@@ -22,7 +22,7 @@
   position_state_address: 0/3/12
   travelling_time_down: 15
   travelling_time_up: 15
-  invert_updown: true
+  device_class: shade
 - name: North
   move_long_address: 0/3/13
   stop_address: 0/3/14
@@ -30,4 +30,4 @@
   position_state_address: 0/3/16
   travelling_time_down: 15
   travelling_time_up: 15
-  invert_updown: true
+  device_class: shade
