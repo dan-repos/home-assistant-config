@@ -1,6 +1,8 @@
 ---
 pantry_motion:
   sensor: binary_sensor.pantry_motion
+  sensor_type: duration
+  sensor_resets_timer: true
   entity: light.pantry_downlights
   delay: 20
   overrides:

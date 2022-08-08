@@ -1,6 +1,8 @@
 ---
 wardrobe_motion:
   sensor: binary_sensor.wardrobe_motion
+  sensor_type: duration
+  sensor_resets_timer: true
   entity: light.wardrobe_downlights
   delay: 30
   overrides:

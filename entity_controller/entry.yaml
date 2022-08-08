@@ -1,6 +1,8 @@
 ---
 entry_motion:
   sensor: binary_sensor.entry_motion
+  sensor_type: duration
+  sensor_resets_timer: true
   entity: light.entry_downlight
   delay: 30
   overrides:

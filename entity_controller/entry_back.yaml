@@ -1,11 +1,13 @@
 ---
 entry_back_motion:
   sensor: binary_sensor.entry_hallway_motion
+  sensor_type: duration
+  sensor_resets_timer: true
   entity: light.entry_back_downlight
   delay: 30
   overrides:
     - input_boolean.entry_back_motion_disabled
-    - input_boolean.outdoor_brigthness_gt_300
+    - input_boolean.outdoor_brigthness_gt_200
   service_data:
     brightness: 200
   night_mode:
