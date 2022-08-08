@@ -5,7 +5,7 @@ crowipmodule:
   timeout: 20
   areas:
     1:
-      name: "Home"
+      name: "Stay"
       code: !secret crowip_code_home
     2:
       name: "Away"
