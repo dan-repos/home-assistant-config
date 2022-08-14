@@ -18,7 +18,7 @@
       brightness_state_address: 0/2/200
     white:
       address: 0/2/201
-      tate_address: 0/2/202
+      state_address: 0/2/202
       brightness_address: 0/2/204
       brightness_state_address: 0/2/205
 #    warm-white:
