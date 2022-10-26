@@ -39,6 +39,13 @@
   - platform: state
     entity_id:
     - switch.knx_sleep_mode
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id:
+    - switch.knx_sleep_mode
+    from: 'on'
+    to: 'off'
   condition: []
   action:
   - if:
