@@ -1,0 +1,13 @@
+---
+#
+# https://www.home-assistant.io/integrations/yamaha/
+#
+media_player:
+  - platform: yamaha
+    name: "RX-A3070"
+    zone_ignore:
+      - "Zone_2"
+      - "Zone_3"
+      - "Zone_4"
+    zone_names:
+      Main_Zone: "Media Room"

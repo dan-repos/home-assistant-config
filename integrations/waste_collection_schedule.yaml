@@ -1,0 +1,5 @@
+waste_collection_schedule:
+  sources:
+    - name: aucklandcouncil_govt_nz
+      args:
+        area_number: 12343207016

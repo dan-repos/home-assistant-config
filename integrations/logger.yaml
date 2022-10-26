@@ -5,12 +5,18 @@
 logger:
   default: warning
   logs:
+    # HA Components
+    homeassistant.components.bluetooth: info
+
     # AAP Alarm Module
     custom_components.crowipmodule: info
 
     # iTouch2 Spa integration
-    custom_components.gecko: debug
-    geckolib: debug
+    #custom_components.gecko: debug
+    #geckolib: debug
 
     # entity controller
     custom_components.entity_controller: info
+
+    # ble monitor
+    custom_components.ble_monitor: warning
