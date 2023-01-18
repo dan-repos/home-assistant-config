@@ -8,7 +8,7 @@ main_bathroom_motion:
   overrides:
     - input_boolean.main_bathroom_motion_disabled
     - input_boolean.motion_sensor_main_bathroom_disabled
-    - input_boolean.outdoor_brigthness_gt_600
+    - input_boolean.outdoor_brigthness_gt_300
   service_data:
     brightness: 200
   night_mode:

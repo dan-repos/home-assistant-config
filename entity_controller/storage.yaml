@@ -8,10 +8,10 @@ storage_motion:
   overrides:
     - input_boolean.storage_motion_disabled
   service_data:
-    brightness: 255
+    brightness: 100
   night_mode:
     delay: 20
     service_data:
-      brightness: 150
+      brightness: 60
     start_time: "23:00:00" # required
     end_time: "06:00:00" # required

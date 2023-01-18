@@ -1,8 +1,0 @@
----
-id: "64676df1-d07e-474d-bff4-3516d78d68f8"
-name: "Entry Back: Sunset"
-icon: mdi:weather-sunset-down
-entities:
-  light.entry_back_downlight:
-    brightness: 200
-    state: "on"

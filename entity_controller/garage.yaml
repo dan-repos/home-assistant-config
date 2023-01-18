@@ -9,10 +9,10 @@ garage_motion:
     - input_boolean.garage_motion_disabled
     - input_boolean.outdoor_brigthness_gt_600
   service_data:
-    brightness: 255
+    brightness: 100
   night_mode:
     delay: 30
     service_data:
-      brightness: 200
+      brightness: 80
     start_time: "22:00:00" # required
     end_time: "07:00:00" # required

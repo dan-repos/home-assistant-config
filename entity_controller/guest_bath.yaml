@@ -8,7 +8,7 @@ guest_bathroom_motion:
   overrides:
     - input_boolean.guest_bathroom_motion_disabled
   service_data:
-    brightness: 200
+    brightness: 230
   night_mode:
     delay: 60
     service_data:

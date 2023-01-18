@@ -1,8 +1,0 @@
----
-id: "36e8a9c2-04b8-4cf9-945d-116fce7b408d"
-name: "Vanity: Sunrise"
-icon: mdi:weather-sunset-up
-entities:
-  light.main_bath_vanity:
-    brightness: 200
-    state: "on"

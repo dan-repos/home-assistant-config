@@ -1,8 +1,0 @@
----
-id: "d3f2f682-df22-49c5-87d2-4e360c747c74"
-name: "Staircase: Sunset"
-icon: mdi:weather-sunset-down
-entities:
-  light.stairs_handrail:
-    brightness: 150
-    state: "on"

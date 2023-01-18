@@ -1,8 +1,0 @@
----
-id: "5ce5e446-c941-462a-a7cc-72dd08c628ee"
-name: "Entry Back: Night"
-icon: mdi:weather-night
-entities:
-  light.entry_back_downlight:
-    brightness: 150
-    state: "on"

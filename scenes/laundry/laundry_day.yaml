@@ -1,8 +1,0 @@
----
-id: "54ee3dcf-27f6-48f3-9f9d-fc91ed30382d"
-name: "Laundry: Day"
-icon: mdi:weather-sunny
-entities:
-  light.laundry_downlights:
-    brightness: 255
-    state: "on"

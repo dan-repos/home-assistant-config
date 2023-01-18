@@ -1,8 +1,0 @@
----
-id: "b6e7f6cc-f4ee-428b-9f71-b6a5ffe3e9d1"
-name: "Vanity: Night"
-icon: mdi:weather-night
-entities:
-  light.main_bath_vanity:
-    brightness: 150
-    state: "on"

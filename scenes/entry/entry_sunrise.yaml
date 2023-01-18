@@ -1,8 +1,0 @@
----
-id: "fb0b9ea5-d662-475e-a4d4-50ce13289b35"
-name: "Entry: Sunrise"
-icon: mdi:weather-sunset-up
-entities:
-  light.entry_downlight:
-    brightness: 200
-    state: "on"

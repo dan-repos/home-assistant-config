@@ -1,8 +1,0 @@
----
-id: "f31560c0-8b82-4129-9301-446f9dc961f8"
-name: "Laundry: Sunset"
-icon: mdi:weather-sunset-down
-entities:
-  light.laundry_downlights:
-    brightness: 200
-    state: "on"

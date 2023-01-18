@@ -1,8 +1,0 @@
----
-id: "f59dbb9d-9bb8-42bb-a264-edd352079a33"
-name: "Garage: 100%"
-icon: mdi:weather-night
-entities:
-  light.garage_battons:
-    brightness: 255
-    state: "on"

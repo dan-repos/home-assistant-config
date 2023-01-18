@@ -1,6 +1,7 @@
 home-assistant.log*
 home-assistant_v2*
 integrations_disabled
+scenes_disabled/
 secrets.yaml
 custom_components
 .storage

@@ -1,8 +1,0 @@
----
-id: "a2029560-e4db-40bc-9503-0653f81bb9d5"
-name: "Wardrobe: Sunset"
-icon: mdi:weather-sunset-down
-entities:
-  light.wardrobe_downlights:
-    brightness: 200
-    state: "on"

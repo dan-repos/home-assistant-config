@@ -1,8 +1,0 @@
----
-id: "cfa6078b-286e-42a2-951f-800297660fe3"
-name: "Staircase: Night"
-icon: mdi:weather-night
-entities:
-  light.stairs_handrail:
-    brightness: 100
-    state: "on"

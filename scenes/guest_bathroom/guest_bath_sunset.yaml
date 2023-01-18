@@ -1,8 +1,0 @@
----
-id: "52e44d5c-b32a-443e-8e9a-368d95df2569"
-name: "Guest Bathroom: Sunset"
-icon: mdi:weather-sunset-down
-entities:
-  light.guest_bath_downlights:
-    brightness: 200
-    state: "on"

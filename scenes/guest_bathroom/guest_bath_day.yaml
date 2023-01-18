@@ -1,8 +1,0 @@
----
-id: "5b9d8a78-e648-4da0-8a64-ba43648adecc"
-name: "Guest Bathroom: Day"
-icon: mdi:weather-sunny
-entities:
-  light.guest_bath_downlights:
-    brightness: 200
-    state: "on"
