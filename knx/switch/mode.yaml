@@ -2,3 +2,6 @@
 - name: KNX Sleep Mode
   state_address: 2/2/0
   address: 2/2/0
+- name: KNX Guest Sleep Mode
+  state_address: 2/2/25
+  address: 2/2/25

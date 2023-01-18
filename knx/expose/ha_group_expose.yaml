@@ -20,3 +20,6 @@
 - type: binary
   entity_id: input_boolean.keypad_mode_house
   address: 2/1/7
+- type: binary
+  entity_id: input_boolean.keypad_mode_guest
+  address: 2/1/8

@@ -1,4 +1,5 @@
-# Input boolean: Master Keypads Mode
+---
+# Input boolean: Master Keypad Mode
 #
 # This mode is to set the keypads into night mode. Master is handled separately
 # and this will be enabled if someone is sleeping

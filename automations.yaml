@@ -67,7 +67,8 @@
     - service: light.turn_off
       data: {}
       target:
-        entity_id: light.grp_house
+        entity_id:
+        - light.house_excl_guest_zone
     else:
     - service: input_boolean.turn_off
       data: {}
@@ -80,6 +81,34 @@
       data: {}
       target:
         entity_id: input_boolean.motion_sensor_main_bathroom_disabled
+  - if:
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: input_boolean.guest_mode
+        state: 'off'
+      - condition: state
+        entity_id: switch.knx_sleep_mode
+        state: 'on'
+    then:
+    - service: switch.turn_on
+      data: {}
+      target:
+        entity_id: switch.knx_guest_sleep_mode
+  - if:
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: input_boolean.guest_mode
+        state: 'off'
+      - condition: state
+        entity_id: switch.knx_sleep_mode
+        state: 'off'
+    then:
+    - service: switch.turn_off
+      data: {}
+      target:
+        entity_id: switch.knx_guest_sleep_mode
   mode: single
 - id: '1654765793972'
   alias: Turn on House Keypads
@@ -161,4 +190,59 @@
       data: {}
       target:
         entity_id: switch.crow_output_garage_door
+  mode: single
+- id: '1672642198753'
+  alias: Sleep Mode (Guest) activated
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.knx_guest_sleep_mode
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id:
+    - switch.knx_guest_sleep_mode
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: switch.knx_guest_sleep_mode
+      state: 'on'
+    then:
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id:
+        - input_boolean.keypad_mode_guest
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id:
+        - light.guest_zone
+    else:
+    - service: input_boolean.turn_off
+      data: {}
+      target:
+        entity_id:
+        - input_boolean.keypad_mode_guest
+  mode: single
+- id: '1673061477362'
+  alias: 'Set Turn On Living Pendant Brightness '
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.living_pendant
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      brightness_pct: 80
+    target:
+      entity_id: light.living_pendant
   mode: single

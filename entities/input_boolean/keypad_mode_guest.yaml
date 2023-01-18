@@ -1,8 +1,8 @@
 ---
-# Input boolean: House Keypad Mode
+# Input boolean: Guest Keypad Mode
 #
 # This mode is to set the keypads into night mode.
-name: "House Keypad Mode"
+name: "Guest Keypad Mode"
 #icon: >
 #  if (state === 'on') return 'mdi:weather-night';
 #  return 'mdi:weather-sunny'
