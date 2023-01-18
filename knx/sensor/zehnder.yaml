@@ -5,7 +5,8 @@
   sync_state: expire 10
 - name: Zehnder Airflow
   state_address: 1/1/31
-  type: volume_flow
+  #  type: volume_flow
+  type: flow_rate_m3h
   sync_state: expire 10
 # Zehnder Room temerature only available if sensor connected
 - name: Zehnder Room temperature
@@ -52,4 +53,24 @@
 - name: Zehnder State/Error
   state_address: 1/1/42
   type: percent
+  sync_state: expire 10
+- name: Zehnder Bedroom CO2
+  state_address: 1/1/43
+  type: ppm
+  sync_state: expire 10
+- name: Zehnder Living CO2
+  state_address: 1/1/44
+  type: ppm
+  sync_state: expire 10
+- name: Zehnder Main bath humidity
+  state_address: 1/1/45
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Guest bath humidity
+  state_address: 1/1/46
+  type: humidity
+  sync_state: expire 10
+- name: Zehnder Laundry humidity
+  state_address: 1/1/47
+  type: humidity
   sync_state: expire 10

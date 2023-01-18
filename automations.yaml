@@ -198,6 +198,26 @@
       target:
         entity_id: switch.crow_output_garage_door
   mode: single
+- id: '1661053242251'
+  alias: Enable Boost mode
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.guest_bathroom_humidity
+    above: '90'
+  - platform: numeric_state
+    entity_id: sensor.main_bathroom_humidity
+    above: '90'
+  - platform: numeric_state
+    entity_id: sensor.laundry_humidity
+    above: '90'
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.zehnder_boost
+  mode: single
 - id: '1672642198753'
   alias: Sleep Mode (Guest) activated
   description: ''
