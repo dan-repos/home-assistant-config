@@ -218,6 +218,30 @@
     target:
       entity_id: switch.zehnder_boost
   mode: single
+- id: '1661328084704'
+  alias: KNX Switch Security
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.security_south_east
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: switch.security_south_east
+      state: 'on'
+    then:
+    - service: light.turn_on
+      data: {}
+      target:
+        entity_id: light.security_south_east
+    else:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.security_south_east
+  mode: single
 - id: '1672642198753'
   alias: Sleep Mode (Guest) activated
   description: ''
@@ -273,6 +297,23 @@
     target:
       entity_id: light.living_pendant
   mode: single
+- id: '1673249567666'
+  alias: Set Turn On Master Downlights Brightness
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.master_downlights
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      brightness_pct: 80
+    target:
+      entity_id: light.master_downlights
+  mode: single
 - id: '1673333887007'
   alias: Test Signal notification
   description: ''
@@ -283,6 +324,18 @@
     data:
       message: Signal notification test
       title: Test
+  mode: single
+- id: '1673334623130'
+  alias: KLF reboot on hass shutdown
+  description: Velux KLF200 Gateway
+  trigger:
+  - platform: homeassistant
+    event: shutdown
+  condition: []
+  action:
+  - service: velux.reboot_gateway
+    data: {}
+  mode: single
 - id: '1673500227074'
   alias: Alarm away disarmed
   description: ''
@@ -298,6 +351,27 @@
   - service: notify.dan_signal
     data:
       message: House has been disarmed
+  mode: single
+- id: '1673898775186'
+  alias: Re-trigger brightness watcher
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  condition: []
+  action:
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id:
+      - input_boolean.outdoor_brigthness_gt_100
+      - input_boolean.outdoor_brigthness_gt_200
+      - input_boolean.outdoor_brigthness_gt_300
+      - input_boolean.outdoor_brigthness_gt_600
+  - service: automation.trigger
+    data: {}
+    target:
+      entity_id: automation.outdoor_brigthness_watcher
   mode: single
 - id: '1673927543705'
   alias: Alarm triggered notification
