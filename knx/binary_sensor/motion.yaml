@@ -41,3 +41,9 @@
 - name: Attic motion
   state_address: 2/0/13
   device_class: motion
+- name: Security South East motion
+  state_address: 2/0/14
+  device_class: motion
+- name: Security North East motion
+  state_address: 2/0/15
+  device_class: motion

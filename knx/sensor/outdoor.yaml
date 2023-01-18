@@ -1,0 +1,9 @@
+---
+- name: Security South East Brightness
+  state_address: 2/3/0
+  type: illuminance
+  sync_state: every 30
+- name: Security North East Brightness
+  state_address: 2/3/1
+  type: illuminance
+  sync_state: every 30

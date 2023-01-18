@@ -1,0 +1,14 @@
+---
+# General Failures
+- name: DG3 General Failure in Total
+  state_address: 10/0/3
+  type: pulse
+- name: DG3 Lamp Failure in Total
+  state_address: 10/0/5
+  type: pulse
+- name: DG3 ECG Failure in Total
+  state_address: 10/0/7
+  type: pulse
+- name: DG3 Converter Failure in Total
+  state_address: 10/0/9
+  type: pulse

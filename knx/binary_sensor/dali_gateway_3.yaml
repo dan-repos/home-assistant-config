@@ -1,0 +1,263 @@
+---
+# General Failures
+- name: DG3 General Failure
+  state_address: 10/0/0
+  device_class: problem
+- name: DG3 Dali Failure
+  state_address: 10/0/1
+  device_class: problem
+- name: DG3 General Failure Exceeds Threshold
+  state_address: 10/0/2
+  device_class: problem
+- name: DG3 Lamp Failure Exceeds Threshold
+  state_address: 10/0/4
+  device_class: problem
+- name: DG3 ECG Failure Exceeds Threshold
+  state_address: 10/0/6
+  device_class: problem
+- name: DG3 Converter Failure Exceeds Threshold
+  state_address: 10/0/8
+  device_class: problem
+# Group Failures
+- name: DG3 GRP 1 Failure
+  state_address: 10/0/15
+  device_class: problem
+- name: DG3 GRP 2 Failure
+  state_address: 10/0/16
+  device_class: problem
+- name: DG3 GRP 3 Failure
+  state_address: 10/0/17
+  device_class: problem
+- name: DG3 GRP 4 Failure
+  state_address: 10/0/18
+  device_class: problem
+- name: DG3 GRP 5 Failure
+  state_address: 10/0/19
+  device_class: problem
+- name: DG3 GRP 6 Failure
+  state_address: 10/0/20
+  device_class: problem
+- name: DG3 GRP 7 Failure
+  state_address: 10/0/21
+  device_class: problem
+- name: DG3 GRP 8 Failure
+  state_address: 10/0/22
+  device_class: problem
+- name: DG3 GRP 9 Failure
+  state_address: 10/0/23
+  device_class: problem
+- name: DG3 GRP 10 Failure
+  state_address: 10/0/24
+  device_class: problem
+- name: DG3 GRP 11 Failure
+  state_address: 10/0/25
+  device_class: problem
+- name: DG3 GRP 12 Failure
+  state_address: 10/0/26
+  device_class: problem
+- name: DG3 GRP 13 Failure
+  state_address: 10/0/27
+  device_class: problem
+- name: DG3 GRP 14 Failure
+  state_address: 10/0/28
+  device_class: problem
+- name: DG3 GRP 15 Failure
+  state_address: 10/0/29
+  device_class: problem
+- name: DG3 GRP 16 Failure
+  state_address: 10/0/30
+  device_class: problem
+
+  # ECG Failures
+- name: DG3 ECG 1 Failure
+  state_address: 10/0/31
+  device_class: problem
+- name: DG3 ECG 2 Failure
+  state_address: 10/0/32
+  device_class: problem
+- name: DG3 ECG 3 Failure
+  state_address: 10/0/33
+  device_class: problem
+- name: DG3 ECG 4 Failure
+  state_address: 10/0/34
+  device_class: problem
+- name: DG3 ECG 5 Failure
+  state_address: 10/0/35
+  device_class: problem
+- name: DG3 ECG 6 Failure
+  state_address: 10/0/36
+  device_class: problem
+- name: DG3 ECG 7 Failure
+  state_address: 10/0/37
+  device_class: problem
+- name: DG3 ECG 8 Failure
+  state_address: 10/0/38
+  device_class: problem
+- name: DG3 ECG 9 Failure
+  state_address: 10/0/39
+  device_class: problem
+- name: DG3 ECG 10 Failure
+  state_address: 10/0/40
+  device_class: problem
+- name: DG3 ECG 11 Failure
+  state_address: 10/0/41
+  device_class: problem
+- name: DG3 ECG 12 Failure
+  state_address: 10/0/42
+  device_class: problem
+- name: DG3 ECG 13 Failure
+  state_address: 10/0/43
+  device_class: problem
+- name: DG3 ECG 14 Failure
+  state_address: 10/0/44
+  device_class: problem
+- name: DG3 ECG 15 Failure
+  state_address: 10/0/45
+  device_class: problem
+- name: DG3 ECG 16 Failure
+  state_address: 10/0/46
+  device_class: problem
+- name: DG3 ECG 17 Failure
+  state_address: 10/0/47
+  device_class: problem
+- name: DG3 ECG 18 Failure
+  state_address: 10/0/48
+  device_class: problem
+- name: DG3 ECG 19 Failure
+  state_address: 10/0/49
+  device_class: problem
+- name: DG3 ECG 20 Failure
+  state_address: 10/0/50
+  device_class: problem
+- name: DG3 ECG 21 Failure
+  state_address: 10/0/51
+  device_class: problem
+- name: DG3 ECG 22 Failure
+  state_address: 10/0/52
+  device_class: problem
+- name: DG3 ECG 23 Failure
+  state_address: 10/0/53
+  device_class: problem
+- name: DG3 ECG 24 Failure
+  state_address: 10/0/54
+  device_class: problem
+- name: DG3 ECG 25 Failure
+  state_address: 10/0/55
+  device_class: problem
+- name: DG3 ECG 26 Failure
+  state_address: 10/0/56
+  device_class: problem
+- name: DG3 ECG 27 Failure
+  state_address: 10/0/57
+  device_class: problem
+- name: DG3 ECG 28 Failure
+  state_address: 10/0/58
+  device_class: problem
+- name: DG3 ECG 29 Failure
+  state_address: 10/0/59
+  device_class: problem
+- name: DG3 ECG 30 Failure
+  state_address: 10/0/60
+  device_class: problem
+- name: DG3 ECG 31 Failure
+  state_address: 10/0/61
+  device_class: problem
+- name: DG3 ECG 32 Failure
+  state_address: 10/0/62
+  device_class: problem
+- name: DG3 ECG 33 Failure
+  state_address: 10/0/63
+  device_class: problem
+- name: DG3 ECG 34 Failure
+  state_address: 10/0/64
+  device_class: problem
+- name: DG3 ECG 35 Failure
+  state_address: 10/0/65
+  device_class: problem
+- name: DG3 ECG 36 Failure
+  state_address: 10/0/66
+  device_class: problem
+- name: DG3 ECG 37 Failure
+  state_address: 10/0/67
+  device_class: problem
+- name: DG3 ECG 38 Failure
+  state_address: 10/0/68
+  device_class: problem
+- name: DG3 ECG 39 Failure
+  state_address: 10/0/69
+  device_class: problem
+- name: DG3 ECG 40 Failure
+  state_address: 10/0/70
+  device_class: problem
+- name: DG3 ECG 41 Failure
+  state_address: 10/0/71
+  device_class: problem
+- name: DG3 ECG 42 Failure
+  state_address: 10/0/72
+  device_class: problem
+- name: DG3 ECG 43 Failure
+  state_address: 10/0/73
+  device_class: problem
+- name: DG3 ECG 44 Failure
+  state_address: 10/0/74
+  device_class: problem
+- name: DG3 ECG 45 Failure
+  state_address: 10/0/75
+  device_class: problem
+- name: DG3 ECG 46 Failure
+  state_address: 10/0/76
+  device_class: problem
+- name: DG3 ECG 47 Failure
+  state_address: 10/0/77
+  device_class: problem
+- name: DG3 ECG 48 Failure
+  state_address: 10/0/78
+  device_class: problem
+- name: DG3 ECG 49 Failure
+  state_address: 10/0/79
+  device_class: problem
+- name: DG3 ECG 50 Failure
+  state_address: 10/0/80
+  device_class: problem
+- name: DG3 ECG 51 Failure
+  state_address: 10/0/81
+  device_class: problem
+- name: DG3 ECG 52 Failure
+  state_address: 10/0/82
+  device_class: problem
+- name: DG3 ECG 53 Failure
+  state_address: 10/0/83
+  device_class: problem
+- name: DG3 ECG 54 Failure
+  state_address: 10/0/84
+  device_class: problem
+- name: DG3 ECG 55 Failure
+  state_address: 10/0/85
+  device_class: problem
+- name: DG3 ECG 56 Failure
+  state_address: 10/0/86
+  device_class: problem
+- name: DG3 ECG 57 Failure
+  state_address: 10/0/87
+  device_class: problem
+- name: DG3 ECG 58 Failure
+  state_address: 10/0/88
+  device_class: problem
+- name: DG3 ECG 59 Failure
+  state_address: 10/0/89
+  device_class: problem
+- name: DG3 ECG 60 Failure
+  state_address: 10/0/90
+  device_class: problem
+- name: DG3 ECG 61 Failure
+  state_address: 10/0/91
+  device_class: problem
+- name: DG3 ECG 62 Failure
+  state_address: 10/0/92
+  device_class: problem
+- name: DG3 ECG 63 Failure
+  state_address: 10/0/93
+  device_class: problem
+- name: DG3 ECG 64 Failure
+  state_address: 10/0/94
+  device_class: problem
