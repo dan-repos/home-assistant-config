@@ -16,7 +16,7 @@ logger:
     #geckolib: debug
 
     # entity controller
-    custom_components.entity_controller: info
+    custom_components.entity_controller: warning
 
     # ble monitor
     custom_components.ble_monitor: warning
