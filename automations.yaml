@@ -141,17 +141,24 @@
         minutes: 0
         seconds: 0
 - id: '1659243009780'
-  alias: Shut Everything Down when arm away
+  alias: Alarm away armed
   description: ''
   trigger:
-  - platform: template
-    value_template: '{{is_state_attr(''alarm_control_panel.away'',''armed'', true)}}'
+  - platform: state
+    entity_id:
+    - alarm_control_panel.away
+    attribute: armed
+    from: false
+    to: true
   condition: []
   action:
   - service: light.turn_off
     data: {}
     target:
       entity_id: light.grp_house
+  - service: notify.dan_signal
+    data:
+      message: House has been armed
   mode: single
 - id: '1659516286542'
   alias: Sliding gate bridge
@@ -245,4 +252,64 @@
       brightness_pct: 80
     target:
       entity_id: light.living_pendant
+  mode: single
+- id: '1673333887007'
+  alias: Test Signal notification
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: notify.dan_signal
+    data:
+      message: Signal notification test
+      title: Test
+- id: '1673500227074'
+  alias: Alarm away disarmed
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - alarm_control_panel.away
+    attribute: armed
+    from: true
+    to: false
+  condition: []
+  action:
+  - service: notify.dan_signal
+    data:
+      message: House has been disarmed
+  mode: single
+- id: '1673927543705'
+  alias: Alarm triggered notification
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - alarm_control_panel.away
+    attribute: alarm
+    to: true
+  condition: []
+  action:
+  - service: notify.dan_signal
+    data:
+      message: Alarm has been triggered
+  mode: single
+- id: '1673928028407'
+  alias: Home Power Supply
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.crow_alarm_system
+    attribute: mains
+  condition:
+  - condition: template
+    value_template: '{{ trigger.from_state.state != ''unknown'' }}'
+  action:
+  - service: notify.dan_signal
+    data_template:
+      message: '{% if is_state(''trigger.to_state.state'',''True'') %}  Power Back
+        On...  {% else %} Power Cut!!! {% endif %}
+
+        '
   mode: single

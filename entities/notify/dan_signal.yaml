@@ -1,0 +1,7 @@
+---
+- name: dan_signal
+  platform: signal_messenger
+  url: !secret signal_url # the URL where the Signal Messenger REST API is listening
+  number: !secret signal_sender_number # the sender number
+  recipients: # one or more recipients
+    - !secret signal_recipient_1
