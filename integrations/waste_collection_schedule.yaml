@@ -1,3 +1,4 @@
+---
 waste_collection_schedule:
   sources:
     - name: aucklandcouncil_govt_nz
@@ -5,10 +6,10 @@ waste_collection_schedule:
         area_number: 12343207016
       customize:
         - type: rubbish
-          alias: General Waste
+          alias: "General Waste"
           icon: mdi:delete
         - type: recycle
-          alias: Recycling
+          alias: "Recycling"
           icon: mdi:recycle
 
 sensor:
@@ -19,12 +20,12 @@ sensor:
   - platform: waste_collection_schedule
     name: waste collection recycling
     details_format: "upcoming"
-    types:
-      - recycle
     value_template: "{{ value.daysTo }}"
+    types:
+      - "Recycling"
   - platform: waste_collection_schedule
     name: waste collection rubbish
     details_format: "upcoming"
-    types:
-      - rubbish
     value_template: "{{ value.daysTo }}"
+    types:
+      - "General Waste"

@@ -1,6 +1,8 @@
 ---
 attic_motion:
-  sensor: binary_sensor.attic_motion
+  sensors:
+    - binary_sensor.attic_motion
+    - binary_sensor.attic_presence_enhancer
   sensor_type: duration
   sensor_resets_timer: true
   entity: light.attic_battons
