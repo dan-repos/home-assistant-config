@@ -1,0 +1,10 @@
+---
+- name: Strip Entry Hallway
+  address: 0/1/218
+  state_address: 0/1/221
+  #  brightness_address: 0/1/220
+  #  brightness_state_address: 0/1/222
+  #  rgbw_address: 0/1/223
+  #  rgbw_state_address: 0/1/224
+  xyy_address: 0/1/223
+  xyy_state_address: 0/1/224

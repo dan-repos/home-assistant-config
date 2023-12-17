@@ -1,0 +1,10 @@
+---
+- name: Strip Living
+  address: 0/1/232
+  state_address: 0/1/235
+  #  brightness_address: 0/1/234
+  #  brightness_state_address: 0/1/236
+  #  rgbw_address: 0/1/237
+  #  rgbw_state_address: 0/1/238
+  xyy_address: 0/1/237
+  xyy_state_address: 0/1/238
