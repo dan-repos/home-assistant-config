@@ -1,6 +1,6 @@
-binary_sensor:
-  - name: "Attic Presence Enhancer"
-    unique_id: "deabd58a-a492-483c-bc57-86209b084427"
-    state: >
-      {{ is_state('light.attic_battons', 'on') 
-          and is_state('binary_sensor.ep1_attic_occupancy', 'on') }}
+- binary_sensor:
+    - name: "Attic Presence Enhancer"
+      unique_id: "deabd58a-a492-483c-bc57-86209b084427"
+      state: >
+        {{ is_state('light.attic_battons', 'on') 
+            and is_state('binary_sensor.ep1_attic_occupancy', 'on') }}
