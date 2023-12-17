@@ -1,6 +1,6 @@
 substitutions:
   name: "everything-presence-one-attic"
-  room: "ep1 attic"
+  friendly_name: "ep1 attic"
 packages:
   Everything_Smart_Technology.Everything_Presence_One: github://everythingsmarthome/presence-one/everything-presence-one.yaml@main
 esphome:
