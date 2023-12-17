@@ -169,7 +169,7 @@
       message: House has been armed
   mode: single
 - id: '1659516286542'
-  alias: Sliding gate bridge
+  alias: 'Bridge: Sliding gate'
   description: ''
   trigger:
   - platform: state
@@ -188,7 +188,7 @@
         entity_id: switch.crow_output_gate
   mode: single
 - id: '1659517931531'
-  alias: Garage door bridge
+  alias: 'Bridge: Garage door'
   description: ''
   trigger:
   - platform: state
@@ -472,4 +472,199 @@
   - service: notify.dan_signal
     data:
       message: Entry Door closed
+  mode: single
+- id: '1685842769395'
+  alias: 'Bridge: Downstairs Light '
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.downstairs_light
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: light.grp_downstairs
+      state: 'on'
+    then:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.grp_downstairs
+  mode: single
+- id: '1685847758767'
+  alias: 'Bridge: Upstairs light'
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.upstairs_light_2
+    from: 'on'
+    to: 'off'
+  - platform: state
+    entity_id:
+    - switch.upstairs_light
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: light.grp_upstairs
+      state: 'on'
+    then:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.grp_upstairs
+  mode: single
+- id: '1690361756579'
+  alias: AlphaESS Enable Grid Charging Battery
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:00:00
+  - platform: time
+    at: '16:00:00'
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.al2002118050331_state_of_charge
+    below: input_number.grid_charging_threshold
+    alias: Confirm AL2002118050331_State of Charge is below Grid Charging Threshold
+  action:
+  - service: alphaess.setbatterycharge
+    data:
+      enabled: true
+      cp1start: 03:00
+      cp1end: 05:00
+      cp2start: '16:00'
+      cp2end: '17:00'
+      chargestopsoc: 80
+      serial: AL2002118050331
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.al2002118050331_grid_charging_battery
+  mode: single
+- id: '1690364695644'
+  alias: AlphaESS Disable Grid Charging Battery
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.al2002118050331_state_of_charge
+    above: input_number.grid_charging_threshold
+    alias: When AL2002118050331_State of Charge is above Grid Charging Threshold
+  condition:
+  - condition: state
+    entity_id: input_boolean.al2002118050331_grid_charging_battery
+    state: 'on'
+  action:
+  - service: alphaess.setbatterycharge
+    data:
+      enabled: false
+      cp1start: 03:00
+      cp1end: 04:00
+      cp2start: '16:00'
+      cp2end: '17:00'
+      chargestopsoc: 50
+      serial: AL2002118050331
+    alias: 'Call a service ''Alpha ESS: Set Battery Charge'' off'
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.al2002118050331_grid_charging_battery
+  mode: single
+- id: '1692481651406'
+  alias: Outdoor brigthness watcher UI
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.st_00127484_illuminance
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_sec_back_se
+        below: '100'
+      sequence:
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_100
+          - input_boolean.outdoor_brigthness_gt_200
+          - input_boolean.outdoor_brigthness_gt_300
+          - input_boolean.outdoor_brigthness_gt_600
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_sec_back_se
+        above: '100'
+        below: '200'
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_100
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_200
+          - input_boolean.outdoor_brigthness_gt_300
+          - input_boolean.outdoor_brigthness_gt_600
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_sec_back_se
+        above: '200'
+        below: '300'
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_100
+          - input_boolean.outdoor_brigthness_gt_200
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_300
+          - input_boolean.outdoor_brigthness_gt_600
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_sec_back_se
+        above: '300'
+        below: '600'
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_100
+          - input_boolean.outdoor_brigthness_gt_200
+          - input_boolean.outdoor_brigthness_gt_300
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_600
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.brightness_sec_back_se
+        above: '600'
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id:
+          - input_boolean.outdoor_brigthness_gt_100
+          - input_boolean.outdoor_brigthness_gt_200
+          - input_boolean.outdoor_brigthness_gt_300
+          - input_boolean.outdoor_brigthness_gt_600
+    default: []
   mode: single
