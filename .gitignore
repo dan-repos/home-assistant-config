@@ -1,9 +1,9 @@
+.storage
 home-assistant.log*
 home-assistant_v2*
-integrations_disabled
-scenes_disabled/
+watchman_report.txt
+*_disabled/
 secrets.yaml
 custom_components
-.storage
 www/community
-themes/
+themes/*

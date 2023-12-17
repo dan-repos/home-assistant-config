@@ -20,3 +20,10 @@ logger:
 
     # ble monitor
     custom_components.ble_monitor: warning
+
+    # Hikvision NEXT
+    custom_components.hikvision_next: info
+
+    # AlphaESS
+    custom_components.alphaess: info
+    alphaess.alphaess: debug
