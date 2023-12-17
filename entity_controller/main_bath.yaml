@@ -1,9 +1,11 @@
 ---
 main_bathroom_motion:
-  sensor: binary_sensor.main_bathroom_motion
+  sensor: 
+    - binary_sensor.main_bathroom_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.main_bath_vanity
+  entity: 
+    - light.main_bath_vanity
   delay: 120
   overrides:
     - input_boolean.main_bathroom_motion_disabled

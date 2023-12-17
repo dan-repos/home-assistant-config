@@ -1,9 +1,11 @@
 ---
 entry_back_motion:
-  sensor: binary_sensor.entry_hallway_motion
+  sensor: 
+    - binary_sensor.entry_hallway_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.entry_back_downlight
+  entity: 
+    - light.entry_back_downlight
   delay: 30
   overrides:
     - input_boolean.entry_back_motion_disabled

@@ -1,9 +1,11 @@
 ---
 laundry_motion:
-  sensor: binary_sensor.laundry_motion
+  sensor: 
+    - binary_sensor.laundry_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.laundry_downlights
+  entity: 
+    - light.laundry_downlights
   delay: 60
   overrides:
     - input_boolean.laundry_motion_disabled

@@ -1,9 +1,11 @@
 ---
 guest_bathroom_motion:
-  sensor: binary_sensor.guest_bathroom_motion
+  sensor: 
+    - binary_sensor.guest_bathroom_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.guest_bath_downlights
+  entity: 
+    - light.guest_bath_downlights
   delay: 120
   overrides:
     - input_boolean.guest_bathroom_motion_disabled

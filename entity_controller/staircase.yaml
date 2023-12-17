@@ -1,9 +1,11 @@
 ---
 staircase_motion:
-  sensor: binary_sensor.stairs_motion
+  sensor: 
+    - binary_sensor.stairs_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.stairs_handrail
+  entity: 
+    - light.stairs_handrail
   delay: 30
   overrides:
     - input_boolean.staircase_motion_disabled

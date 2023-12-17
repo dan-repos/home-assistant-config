@@ -1,9 +1,11 @@
 ---
 wc_motion:
-  sensor: binary_sensor.wc_motion
+  sensor:
+    - binary_sensor.wc_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.wc_pendant
+  entity:
+    - light.wc_pendant
   delay: 300
   overrides:
     - input_boolean.wc_motion_disabled

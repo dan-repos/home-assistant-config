@@ -5,7 +5,8 @@ attic_motion:
     - binary_sensor.attic_presence_enhancer
   sensor_type: duration
   sensor_resets_timer: true
-  entity: light.attic_battons
+  entity: 
+    - light.attic_battons
   delay: 120
   overrides:
     - input_boolean.attic_motion_disabled
