@@ -1,11 +1,9 @@
 ---
 garage_motion:
-  sensor: 
-    - binary_sensor.garage_motion
+  sensor: binary_sensor.garage_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: 
-    - light.garage_battons
+  entity: light.garage_battons
   delay: 120
   overrides:
     - input_boolean.garage_motion_disabled

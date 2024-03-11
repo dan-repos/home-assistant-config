@@ -1,11 +1,9 @@
 ---
 storage_motion:
-  sensor: 
-    - binary_sensor.storage_motion
+  sensor: binary_sensor.storage_motion
   sensor_type: duration
   sensor_resets_timer: true
-  entity: 
-    - light.storage_downlights
+  entity: light.storage_downlights
   delay: 20
   overrides:
     - input_boolean.storage_motion_disabled
