@@ -1,12 +1,23 @@
 substitutions:
-  name: "everything-presence-one-attic"
-  friendly_name: "ep1 attic"
+  name: everything-presence-one-attic
+  friendly_name: ep1 attic
+
 packages:
-  Everything_Smart_Technology.Everything_Presence_One: github://everythingsmarthome/presence-one/everything-presence-one.yaml@main
+  Everything_Smart_Technology.Everything_Presence_One: github://everythingsmarthome/everything-presence-one/everything-presence-one.yaml@main
+
 esphome:
   name: ${name}
   name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
 
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+
+api:
+  encryption:
+    key: UmGbl8E1oEs4MFSABZp9PvFMW7aldCfK7JW92sMaCQo=
 
 wifi:
   ssid: !secret wifi_ssid
