@@ -10,6 +10,7 @@ substitutions:
 packages:
   remote_package:
     url: https://github.com/dan-s-github/zehnder-comfoair-can
+#    ref: 4996bc98dc69d0a9256f003c16e94ac5d5f7dd0f
     ref: main
     files: 
       - packages/canbus.yml
@@ -21,7 +22,8 @@ packages:
       - packages/text_sensors.yml
       - packages/fan.yml
       - packages/climate.yml
-
+      - packages/diagnostics.yml
+  
 esphome:
   name: ${name}
   friendly_name: Zehnder ComfoAir CAN
@@ -45,14 +47,19 @@ external_components:
 # See docs: https://github.com/michaelarnauts/aiocomfoconnect/blob/master/docs/PROTOCOL-PDO.md
 zehnder_comfoair_q:
   id: comfoair
-  request_ids: [16, 49, 54, 55, 65, 66, 67, 81, 82, 117, 118, 119, 120, 121, 122, 128, 129, 130, 192, 209, 210, 211, 212, 212, 213, 214, 215, 216, 217, 218, 220, 221, 227, 274, 275, 276, 277, 278, 290, 291, 292, 293, 294]
+  request_ids: [16, 49, 54, 55, 65, 66, 67, 81, 82, 
+    117, 118, 119, 120, 121, 122, 128, 129, 130, 144, 145, 146, 192, 
+    209, 210, 211, 212, 212, 213, 214, 215, 216, 217, 218, 
+    220, 221, 227, 274, 275, 276, 277, 278, 290, 291, 292, 293, 294]
 
 # Enable Home Assistant API
 api:
   encryption:
     key: "TUVw7zZSA/WDeNigYtLF9hVaNXU4g6GOWrkF2RnZYDw="
 
+# Allow Over-The-Air updates
 ota:
+  platform: esphome
 
 wifi:
   ssid: !secret wifi_ssid
@@ -61,7 +68,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "${name}-9D16Bc"
-    password: "dG17TwobktiM"
+    password: !secret fallback_hotspot_password
 
 captive_portal:
     

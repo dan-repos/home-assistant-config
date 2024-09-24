@@ -3,7 +3,10 @@ substitutions:
   friendly_name: ep1 attic
 
 packages:
-  Everything_Smart_Technology.Everything_Presence_One: github://everythingsmarthome/everything-presence-one/everything-presence-one.yaml@main
+  Everything_Smart_Technology.Everything_Presence_One: 
+    url: https://github.com/everythingsmarthome/everything-presence-one
+    ref: v1.2.3
+    file: everything-presence-one-ble.yaml
 
 esphome:
   name: ${name}
@@ -18,6 +21,9 @@ esp32:
 api:
   encryption:
     key: UmGbl8E1oEs4MFSABZp9PvFMW7aldCfK7JW92sMaCQo=
+
+ota:
+  platform: esphome 
 
 wifi:
   ssid: !secret wifi_ssid
