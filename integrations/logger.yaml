@@ -26,4 +26,4 @@ logger:
 
     # AlphaESS
     custom_components.alphaess: info
-    alphaess.alphaess: debug
+    alphaess.alphaess: info

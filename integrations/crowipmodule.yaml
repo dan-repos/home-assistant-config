@@ -7,6 +7,7 @@ crowipmodule:
     1:
       name: "Away"
       code: !secret crowip_code_home
+      code_arm_required: False
     2:
       name: "Stay"
       code: !secret crowip_code_home
