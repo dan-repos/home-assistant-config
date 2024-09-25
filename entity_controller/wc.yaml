@@ -6,7 +6,7 @@ wc_motion:
   entity: light.wc_pendant
   delay: 300
   overrides:
-    - input_boolean.wc_motion_disabled
+    - input_boolean.wc_motion_override
   service_data:
     brightness: 254
   night_mode:

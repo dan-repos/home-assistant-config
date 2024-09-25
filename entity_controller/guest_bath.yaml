@@ -6,7 +6,7 @@ guest_bathroom_motion:
   entity: light.guest_bath_downlights
   delay: 120
   overrides:
-    - input_boolean.guest_bathroom_motion_disabled
+    - input_boolean.guest_bathroom_motion_override
   service_data:
     brightness: 230
   night_mode:
