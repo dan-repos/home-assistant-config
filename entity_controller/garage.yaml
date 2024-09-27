@@ -6,7 +6,7 @@ garage_motion:
   entity: light.garage_battons
   delay: 120
   overrides:
-    - input_boolean.garage_motion_override
+    - group.garage_motion_override
   service_data:
     brightness: 100
   night_mode:

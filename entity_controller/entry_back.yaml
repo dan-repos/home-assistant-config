@@ -6,7 +6,7 @@ entry_back_motion:
   entity: light.entry_back_downlight
   delay: 30
   overrides:
-    - input_boolean.entry_back_motion_override
+    - group.entry_back_motion_override
   service_data:
     brightness: 80
   night_mode:

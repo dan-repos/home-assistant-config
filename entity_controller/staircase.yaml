@@ -6,7 +6,7 @@ staircase_motion:
   entity: light.stairs_handrail
   delay: 45
   overrides:
-    - input_boolean.staircase_motion_override
+    - group.staircase_motion_override
   service_data:
     brightness: 60
   night_mode:

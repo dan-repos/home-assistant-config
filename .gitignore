@@ -7,3 +7,4 @@ secrets.yaml
 custom_components
 www/community
 themes/*
+manual_custom_components

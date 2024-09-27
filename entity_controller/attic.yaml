@@ -9,6 +9,6 @@ attic_motion:
   entity: light.attic_battons
   delay: 120
   overrides:
-    - input_boolean.attic_motion_override
+    - group.attic_motion_override
   service_data:
-    brightness: 255
+    brightness: 255 

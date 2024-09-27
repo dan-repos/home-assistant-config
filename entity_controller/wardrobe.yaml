@@ -6,7 +6,7 @@ wardrobe_motion:
   entity: light.wardrobe_downlights
   delay: 30
   overrides:
-    - input_boolean.wardrobe_motion_override
+    - group.wardrobe_motion_override
   service_data:
     brightness: 200
   night_mode:
